@@ -31,7 +31,7 @@ p {
 	margin: 0;
 }
 
-/* Aplica el cursor personalizado a toda la aplicación */
+/* cursor personalizado */
 * {
 	cursor: url('./assets/pokemon.png') 8 8, auto;
 }
