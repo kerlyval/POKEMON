@@ -1,6 +1,5 @@
-// import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Header from '../components/pokedex/header';
+import Header from '../components/pokedex/Header';
 import { useFetch } from '../hooks/useFetch';
 import Search from '../components/pokedex/Search';
 import Filters from '../components/pokedex/Filters';

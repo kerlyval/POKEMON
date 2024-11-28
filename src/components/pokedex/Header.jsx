@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useNameContext } from '../../contexts/nameContext';
-import '../../styles/header.css';
+import '../../styles/Header.css';
 
 function Header() {
 	const [name] = useNameContext();
