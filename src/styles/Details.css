@@ -1,0 +1,162 @@
+@import 'boxicons/css/boxicons.min.css';
+
+.poke-link {
+	color: #ff6347;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.poke-link:hover {
+	color: #000000;
+}
+
+.pokemon__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2em;
+	padding: 2em;
+	font-family: 'Courier New', Courier, monospace;
+	border: 1px;
+}
+
+.pokemon__api {
+	animation: jumpAndSpin 3s ease-in-out 4;
+}
+
+@keyframes jumpAndSpin {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-20px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	75% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0) rotate(360deg);
+	}
+}
+
+.pokemon__container > div {
+	flex: 1;
+}
+
+/* SEGUNDO CONTAINER */
+.pokemon__segundocontainer {
+	border-radius: 8px;
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	padding: 2em;
+}
+
+.header__logo {
+	background-color: white;
+	border-radius: 4px;
+	position: relative;
+	padding: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.numero__poke {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	gap: 18px;
+}
+
+.name__poke {
+	font-weight: bold;
+	text-align: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.pokebola {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	position: sticky;
+
+	bottom: 1em;
+	right: 15em;
+	margin: 0 auto;
+	z-index: 10;
+}
+.pokebola2 {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	position: sticky;
+	top: 12.5em;
+	bottom: 0.35em;
+	left: 12.7em;
+	right: 0;
+	margin: 0 auto;
+}
+
+/*  PESO Y ALTURA  */
+.poke__card-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5em;
+	margin-bottom: 1em;
+	font-size: 18px;
+}
+
+.poke__card-type div {
+	display: flex;
+	flex-direction: column;
+}
+
+.poke__card-type span {
+	font-weight: bold;
+}
+
+.poke__card-body {
+	margin-top: 1em;
+}
+
+.poke__card-body h3 {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+/*  TIPO Y HABILIDADES*/
+
+.poke__habil {
+	background-color: rgba(255, 255, 255, 0.648);
+
+	border-radius: 10px;
+	backdrop-filter: brightness(1.8) blur(4px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.poke__habil-item {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.poke__card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

@@ -1,0 +1,76 @@
+.pokedex {
+	padding: 3em 0;
+}
+
+.pokedex__header {
+	margin: 1em 0;
+}
+
+.pokedex__container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 0.75em;
+}
+
+.text {
+	font-weight: bold;
+	color: orangered;
+	font-size: 36px;
+}
+
+.text {
+	font-weight: bold;
+	color: orangered;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.letter {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	display: inline-block;
+	animation: jumpAndColorChange 2s ease-in-out 3;
+	font-size: 34px;
+}
+
+@keyframes jumpAndColorChange {
+	0% {
+		transform: translateY(0);
+		color: orangered;
+		font-size: 38px;
+	}
+	25% {
+		transform: translateY(-10px);
+		color: yellowgreen;
+		font-size: 38px;
+	}
+	50% {
+		transform: translateY(0);
+		color: #003a70;
+		font-size: 38px;
+	}
+	75% {
+		transform: translateY(-10px);
+		color: red;
+		font-size: 38px;
+	}
+	100% {
+		transform: translateY(0);
+		color: purple;
+		font-size: 38px;
+	}
+}
+
+.letter:nth-child(1) {
+	animation-delay: 0s; /* La primera letra no tiene delay */
+}
+
+.letter:nth-child(2) {
+	animation-delay: 0.2s; /* La segunda letra tiene un retraso de 0.2 segundos */
+}
+
+.letter:nth-child(3) {
+	animation-delay: 0.4s; /* La tercera letra tiene un retraso de 0.4 segundos */
+}
+
+.letter:nth-child(4) {
+	animation-delay: 0.6s; /* La cuarta letra tiene un retraso de 0.6 segundos */
+}

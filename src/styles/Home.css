@@ -1,0 +1,66 @@
+.home {
+	display: grid;
+	place-content: center;
+	height: 100dvh;
+	background-image: url('../assets/pikachu-smiling.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.home__input {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 0.5em 1em;
+	border-radius: 4px 0 0 4px;
+}
+
+.home__title,
+.home__text {
+	margin-bottom: 0.5em;
+	font-size: 19px;
+}
+.home__btn {
+	background-color: crimson;
+	border: transparent;
+	padding: 0.5em 1em;
+	border-radius: 0 4px 4px 0;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.home__btn:hover {
+	background-color: yellow;
+	color: black;
+}
+.btn--radius {
+	border-radius: 4px;
+}
+
+.home__link {
+	color: rgb(179, 48, 48);
+	font-weight: 700;
+	font-size: 25px;
+	display: inline-block;
+	position: relative;
+}
+
+.arrow {
+	font-size: 30px;
+	display: inline-block;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0) translateX(-50%);
+	}
+	50% {
+		transform: translateY(-10px) translateX(-50%);
+	}
+}

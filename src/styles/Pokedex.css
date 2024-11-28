@@ -1,0 +1,68 @@
+.pokedex__container {
+	max-width: 1024px;
+}
+
+.pokedex__form {
+	display: flex;
+	gap: 0.75em;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.pokedex__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.25em;
+}
+
+/* aqui modidique */
+/* .botones {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+.btn_poke {
+	padding: 0.5em 1em;
+	background-color: #ffcb05;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.btn_poke:disabled {
+	background-color: #ddd;
+	cursor: not-allowed;
+} */
+
+.botones {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	position: flex;
+	padding-top: 1.5em;
+}
+
+/* Estilo de los botones */
+.btn_poke {
+	padding: 0.5em 1em;
+	background-color: #ffcb05;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.btn_poke:hover {
+	background-color: black;
+	color: white;
+}
