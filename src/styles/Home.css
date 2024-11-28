@@ -2,7 +2,7 @@
 	display: grid;
 	place-content: center;
 	height: 100dvh;
-	background-image: url('../assets/pikachu-smiling.png');
+	background-image: url('/pikachu-smiling.png');
 	background-repeat: no-repeat;
 	background-position: left bottom;
 }
